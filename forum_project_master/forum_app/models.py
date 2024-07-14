@@ -21,4 +21,3 @@ class category:
     ct_name=models.CharField(max_length=80)
     id=models.UUIDField()
 
-
