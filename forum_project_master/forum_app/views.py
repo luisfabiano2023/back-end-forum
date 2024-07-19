@@ -3,6 +3,7 @@ from . import models as md
 from . import serializers as se
 
 def postar():
+    if
     pass
 def cadastrar_se():
     pass

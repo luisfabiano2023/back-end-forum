@@ -13,7 +13,7 @@ class users(models.Model):
     email= models.EmailField()
     password=models.CharField(max_length=12)
 
-class post_structure(models.Model):
+class post(models.Model):
     title=models.CharField(max_length=150)
     content=models.CharField(max_length=600)
     post_category=category.id
