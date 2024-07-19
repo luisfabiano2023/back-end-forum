@@ -11,7 +11,7 @@ class category(models.Model):
 class users(models.Model):
     username = models.CharField(max_length=20)
     email= models.EmailField()
-    psswd=models.CharField(max_length=12)
+    password=models.CharField(max_length=12)
 
 class post_structure(models.Model):
     title=models.CharField(max_length=150)
