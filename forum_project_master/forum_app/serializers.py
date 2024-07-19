@@ -11,7 +11,7 @@ class userS(serializers.ModelSerializer):
                    ]
 class postS(serializers.ModelSerializer):
     class meta:
-        model=models.post_structure
+        model=models.post
         fields=['id',
                   'title',
                   'content',

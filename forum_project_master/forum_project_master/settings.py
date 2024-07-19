@@ -40,7 +40,7 @@ INSTALLED_APPS = [
     'forum_app',
     'rest_framework',
     'pandas',
-    'accounts',
+    
 ]
 
 MIDDLEWARE = [
