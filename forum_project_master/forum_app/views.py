@@ -13,11 +13,21 @@ def postar(request): #criando um novo post
     if post.is_valid():
         post.save()
         return Response(post.data)
-    else:
+    else: 
         return Response(status=status.HTTP_404_NOT_FOUND)
     
-def cadastrar_se():
-    pass
+@api_view(['POST'])    
+def cadastrar_se(request):
+    userr=se.userS(data=request.data)
+    if md.users.objects.filter(**request.data).exists():
+        raise se.ValidationError('This data already exists')
+ 
+    if userr.is_valid():
+        userr.save()
+        return Response(userr.data)
+    else: 
+        return Response(status=status.HTTP_404_NOT_FOUND)
+    
 def logar():
     pass
 
